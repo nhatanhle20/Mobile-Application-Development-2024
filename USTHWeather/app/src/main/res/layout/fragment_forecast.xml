@@ -1,12 +1,220 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="#FFBBDEFB"> <!-- Light blue background -->
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <!-- Monday's forecast -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/forecast_fragment" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
 
-</FrameLayout>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/partly_cloudy_icon"
+            android:contentDescription="MondayWeather" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partly Cloudy 24C - 31C"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Tuesday's forecast -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/showers_icon"
+            android:contentDescription="TuesdayWeather" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Tue"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Showers 24C - 30C"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Wednesday's forecast -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/rain_icon"
+            android:contentDescription="WednesdayWeather" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wed"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rain 22C - 23C"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Thursday's forecast -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/showers_icon"
+            android:contentDescription="ThursdayWeather" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thu"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Scattered Showers 22C - 27C"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Friday's forecast -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/mostly_cloudy_icon"
+            android:contentDescription="FridayWeather" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fri"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mostly Cloudy 22C - 30C"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Saturday's forecast -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/partly_cloudy_icon"
+            android:contentDescription="SundayWeather" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sat"
+            android:textSize="18sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partly Cloudy 24C - 31C"
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:layout_gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <!-- Sunday's forecast -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="SundayWeather"
+            android:src="@drawable/thunderstorms_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Sun"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:text="Thunderstorms 25C - 28C"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</LinearLayout>
