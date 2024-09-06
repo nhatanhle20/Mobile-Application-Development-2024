@@ -10,7 +10,15 @@ public class WeatherActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.i(TAG, "onCreate called");
+        setContentView(R.layout.activity_weather);
+
+        // Add this block of code to dynamically add the ForecastFragment
+        if (savedInstanceState == null) { // Check to prevent adding the fragment multiple times
+            ForecastFragment forecastFragment = new ForecastFragment();
+            getSupportFragmentManager().beginTransaction()
+                    .add(R.id.container, forecastFragment)
+                    .commit();
+        }
     }
 
     @Override
