@@ -16,7 +16,7 @@ public class WeatherActivity extends AppCompatActivity {
         if (savedInstanceState == null) { // Check to prevent adding the fragment multiple times
             ForecastFragment forecastFragment = new ForecastFragment();
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, forecastFragment)
+                    .add(R.id.forecastFragment, forecastFragment)
                     .commit();
         }
     }
