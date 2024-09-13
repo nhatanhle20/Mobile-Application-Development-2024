@@ -1,39 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#CCFFCC"> <!-- Green background -->
+    android:background="#CCFFCC"
+    android:padding="16dp">
+
 
         <TextView
+            android:id="@+id/textWeatherStatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mon"
-            android:textSize="25sp"
-            android:paddingStart="20dp"
-            android:layout_gravity="top" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Partly Cloudy 24C - 31C"
+            android:text="12C\nCloudy"
             android:textSize="20sp"
-            android:paddingStart="20dp"
-            android:layout_gravity="center_vertical" />
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/black" />
 
         <ImageView
+            android:id="@+id/weatherIcon"
             android:layout_width="150dp"
             android:layout_height="150dp"
             android:src="@drawable/partly_cloudy_icon"
-            android:layout_gravity="center"
-            android:layout_weight="1"/>
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter" />
 
         <TextView
+            android:id="@+id/textCityName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Paris"
             android:textSize="20sp"
-            android:paddingStart="20dp"
-            android:layout_gravity="center_vertical" />
-</LinearLayout>
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@android:color/black" />
+
+</RelativeLayout>

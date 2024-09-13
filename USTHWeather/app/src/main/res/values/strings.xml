@@ -43,7 +43,6 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="title_activity_weather">WeatherActivity</string>
-    <string name="title_activity_weather1">WeatherActivity1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="forecast_fragment">Forecast fragment</string>

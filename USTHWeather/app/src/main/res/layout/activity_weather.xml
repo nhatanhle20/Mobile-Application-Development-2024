@@ -4,20 +4,15 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- WeatherFragment -->
-    <fragment
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/weatherFragment"
-        android:name="vn.edu.usth.weather.WeatherFragment" />
+<!--    <com.google.android.material.tabs.TabLayout-->
+<!--        android:id="@+id/tab_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
 
-    <!-- ForecastFragment -->
-    <fragment
+    <!-- ViewPager2 to hold three instances of WeatherAndForecastFragment -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:id="@+id/forecastFragment"
-        android:name="vn.edu.usth.weather.ForecastFragment" />
+        android:layout_height="match_parent" />
 
 </LinearLayout>
