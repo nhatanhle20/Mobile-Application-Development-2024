@@ -4,10 +4,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-<!--    <com.google.android.material.tabs.TabLayout-->
-<!--        android:id="@+id/tab_layout"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content" />-->
+    <!-- Tab layout-->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
     <!-- ViewPager2 to hold three instances of WeatherAndForecastFragment -->
     <androidx.viewpager2.widget.ViewPager2

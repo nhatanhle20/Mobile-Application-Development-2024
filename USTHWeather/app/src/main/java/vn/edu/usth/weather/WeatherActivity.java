@@ -20,6 +20,23 @@ public class WeatherActivity extends AppCompatActivity {
         ViewPager2 viewPager = findViewById(R.id.view_pager);
         WeatherPagerAdapter adapter = new WeatherPagerAdapter(this);
         viewPager.setAdapter(adapter);
+
+        TabLayout tabLayout = findViewById(R.id.tab_layout);
+        new TabLayoutMediator(tabLayout, viewPager,
+                (tab, position) -> {
+                    // Set the title for each tab
+                    switch (position) {
+                        case 0:
+                            tab.setText("HANOI, VIETNAM");
+                            break;
+                        case 1:
+                            tab.setText("PARIS, FRANCE");
+                            break;
+                        case 2:
+                            tab.setText("TOULOUSE, FRANCE");
+                            break;
+                    }
+                }).attach();
     }
 
     @Override
