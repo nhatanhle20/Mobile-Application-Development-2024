@@ -5,7 +5,6 @@
     android:background="#CCFFCC"
     android:padding="16dp">
 
-
         <TextView
             android:id="@+id/textWeatherStatus"
             android:layout_width="wrap_content"
@@ -16,6 +15,11 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:textColor="@android:color/black" />
+
+        <ImageView
+            android:layout_width="385dp"
+            android:layout_height="364dp"
+            android:background="@drawable/frame"/>
 
         <ImageView
             android:id="@+id/weatherIcon"
