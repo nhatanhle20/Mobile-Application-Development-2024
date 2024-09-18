@@ -17,11 +17,11 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/partly_cloudy_icon"
-            android:contentDescription="MondayWeather" />
+            android:contentDescription="@string/mondayweather" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mon"
+            android:text="@string/mon"
             android:textSize="18sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -29,7 +29,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Partly Cloudy 24C - 31C"
+            android:text="@string/partly_cloudy_24c_31c"
             android:textSize="16sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -47,20 +47,20 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/showers_icon"
-            android:contentDescription="TuesdayWeather" />
+            android:contentDescription="@string/tuesdayweather" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:paddingStart="16dp"
-            android:text="Tue"
+            android:text="@string/tue"
             android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Showers 24C - 30C"
+            android:text="@string/showers_24c_30c"
             android:textSize="16sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -78,11 +78,11 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/rain_icon"
-            android:contentDescription="WednesdayWeather" />
+            android:contentDescription="@string/wednesdayweather" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Wed"
+            android:text="@string/wed"
             android:textSize="18sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -90,7 +90,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rain 22C - 23C"
+            android:text="@string/rain_22c_23c"
             android:textSize="16sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -108,11 +108,11 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/showers_icon"
-            android:contentDescription="ThursdayWeather" />
+            android:contentDescription="@string/thursdayweather" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Thu"
+            android:text="@string/thu"
             android:textSize="18sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -120,7 +120,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Scattered Showers 22C - 27C"
+            android:text="@string/scattered_showers_22c_27c"
             android:textSize="16sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -138,11 +138,11 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:src="@drawable/mostly_cloudy_icon"
-            android:contentDescription="FridayWeather" />
+            android:contentDescription="@string/fridayweather" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fri"
+            android:text="@string/fri"
             android:textSize="18sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -150,7 +150,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mostly Cloudy 22C - 30C"
+            android:text="@string/mostly_cloudy_22c_30c"
             android:textSize="16sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -168,11 +168,11 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:src="@drawable/partly_cloudy_icon"
-            android:contentDescription="SundayWeather" />
+            android:contentDescription="@string/sundayweather" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sat"
+            android:text="@string/sat"
             android:textSize="18sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -180,7 +180,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Partly Cloudy 24C - 31C"
+            android:text="@string/partly_cloudy_24c_31c"
             android:textSize="16sp"
             android:paddingStart="16dp"
             android:layout_gravity="center_vertical" />
@@ -197,7 +197,7 @@
         <ImageView
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:contentDescription="SundayWeather"
+            android:contentDescription="@string/sundayweather"
             android:src="@drawable/thunderstorms_icon" />
 
         <TextView
@@ -205,7 +205,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:paddingStart="16dp"
-            android:text="Sun"
+            android:text="@string/sun"
             android:textSize="18sp" />
 
         <TextView
@@ -213,7 +213,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:paddingStart="16dp"
-            android:text="Thunderstorms 25C - 28C"
+            android:text="@string/thunderstorms_25c_28c"
             android:textSize="16sp" />
 
     </LinearLayout>

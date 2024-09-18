@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">USTH Weather</string>
     <!-- Strings used for fragments for navigation -->
@@ -42,29 +43,32 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
     <string name="title_activity_weather">WeatherActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="forecast_fragment">Forecast fragment</string>
     <string name="mondayweather">MondayWeather</string>
-    <string name="mon">Mon</string>
-    <string name="partly_cloudy_24c_31c">Partly Cloudy 24C - 31C</string>
+    <string name="mon">Thứ 2</string>
+    <string name="partly_cloudy_24c_31c">Ít mây 24C - 31C</string>
     <string name="tuesdayweather">TuesdayWeather</string>
-    <string name="tue">Tue</string>
-    <string name="showers_24c_30c">Showers 24C - 30C</string>
+    <string name="tue">Thứ 3</string>
+    <string name="showers_24c_30c">Mưa rào 24C - 30C</string>
     <string name="wednesdayweather">WednesdayWeather</string>
-    <string name="wed">Wed</string>
-    <string name="rain_22c_23c">Rain 22C - 23C</string>
+    <string name="wed">Thứ 4</string>
+    <string name="rain_22c_23c">Mưa 22C - 23C</string>
     <string name="thursdayweather">ThursdayWeather</string>
-    <string name="thu">Thu</string>
-    <string name="scattered_showers_22c_27c">Scattered Showers 22C - 27C</string>
+    <string name="thu">Thứ 5</string>
+    <string name="scattered_showers_22c_27c">Mưa rải rác 22C - 27C</string>
     <string name="fridayweather">FridayWeather</string>
-    <string name="fri">Fri</string>
-    <string name="mostly_cloudy_22c_30c">Mostly Cloudy 22C - 30C</string>
+    <string name="fri">Thứ 6</string>
+    <string name="mostly_cloudy_22c_30c">Nhiều mây 22C - 30C</string>
     <string name="sundayweather">SundayWeather</string>
-    <string name="sat">Sat</string>
-    <string name="sun">Sun</string>
-    <string name="thunderstorms_25c_28c">Thunderstorms 25C - 28C</string>
-    <string name="_12c_ncloudy">12C\nCloudy</string>
+    <string name="sat">Thứ 7</string>
+    <string name="sun">CN</string>
+    <string name="thunderstorms_25c_28c">Mưa bão 25C - 28C</string>
+    <string name="_12c_ncloudy">12C\nMây mù</string>
     <string name="paris">Paris</string>
+
+
 </resources>
