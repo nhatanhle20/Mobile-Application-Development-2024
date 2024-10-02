@@ -2,6 +2,7 @@ package vn.edu.usth.weather;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -27,6 +28,8 @@ public class WeatherActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather);
+
+        new SimulateNetworkRequest().execute();
 
         // Set up the toolbar
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -63,7 +66,30 @@ public class WeatherActivity extends AppCompatActivity {
         }
     }
 
-    // Create the options menu and inflate the menu resource (menu_weather.xml)
+    // AsyncTask to simulate network request
+    private class SimulateNetworkRequest extends AsyncTask<Void, Void, String> {
+
+        @Override
+        protected String doInBackground(Void... voids) {
+            try {
+                // Simulate network delay
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            // Return the result (could be anything from a network request)
+            return "Network Request Complete";
+        }
+
+        @Override
+        protected void onPostExecute(String result) {
+            // Show the result in a Toast message
+            Toast.makeText(WeatherActivity.this, result, Toast.LENGTH_LONG).show();
+        }
+    }
+
+
+        // Create the options menu and inflate the menu resource (menu_weather.xml)
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
