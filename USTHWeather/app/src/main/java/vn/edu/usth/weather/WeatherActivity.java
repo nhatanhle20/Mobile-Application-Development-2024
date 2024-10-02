@@ -3,6 +3,8 @@ package vn.edu.usth.weather;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -76,7 +78,7 @@ public class WeatherActivity extends AppCompatActivity {
 
         // Handle Refresh action
         if (id == R.id.action_refresh) {
-            Toast.makeText(this, "Refreshing", Toast.LENGTH_SHORT).show();
+            simulateNetworkRequest();
             // Add your refresh logic here
             return true;
         }
@@ -90,6 +92,34 @@ public class WeatherActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    private void simulateNetworkRequest() {
+        // Create a Handler to run on the main thread
+        final Handler handler = new Handler(Looper.getMainLooper());
+
+        // Create a new thread for simulating the network request
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    // Simulate a delay for the network request (1 seconds)
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+
+                // After the delay, use the handler to post the result on the main thread
+                handler.post(new Runnable() {
+                    @Override
+                    public void run() {
+                        // Display the result in a Toast message
+                        Toast.makeText(WeatherActivity.this, "Data refreshed!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        }).start();
+    }
+
 
     @Override
     protected void onDestroy() {
